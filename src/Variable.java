@@ -1,3 +1,13 @@
+
+/*
+Создайте класс Variable с методом main
+Объявите в методе переменные всех существующих в Java примитивных типов данных. Каждой переменной присвойте значение
+В качестве значений используйте информацию о своем компьютере: количество ядер, частота процессора и тд.
+Выведите все значения переменных на консоль
+Разберитесь с Git/GitHub, почитайте рекомендации о том, как с ними работать
+Покажите Д/З наставнику (присылайте ссылку с дз на гитхаб)
+*/
+
 public class Variable {
     public static void main(String[] args) {
         byte b = -5;
@@ -8,13 +18,6 @@ public class Variable {
         double d = 45.245356d;
         char c = 'Z';
         boolean bool = true;
-        System.out.println(b);
-        System.out.println(s);
-        System.out.println(i);
-        System.out.println(l);
-        System.out.println(f);
-        System.out.println(d);
-        System.out.println(c);
-        System.out.println(bool);
+        System.out.println(b + "\n" + s + "\n" + i + "\n" + l + "\n" + f + "\n" + d + "\n" + c + "\n" + bool);
     }
 }
