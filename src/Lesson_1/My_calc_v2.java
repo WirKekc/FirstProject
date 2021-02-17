@@ -38,14 +38,24 @@ public class My_calc_v2 {
             System.out.println("a * b = " + (a * b));
         }
         else if (operation.equals("/")){
-            System.out.println("a / b = " + (a / b));
-        }
-        else if (operation.equals("^")){
-            float c = 1;
-            for (int i = 0; i < b; i++) {
-                c = c*a;
+            if (b == 0){
+                System.out.println("Деление на 0 запрещено!");
             }
-            System.out.println("a ^ b = " + c);
+            else {
+                System.out.println("a / b = " + (a / b));
+            }
+        }
+        else if (operation == "^"){
+            if (b == 0){
+                System.out.println("a ^ b = 1");
+            }
+            else {
+                float c = 1;
+                for (int i = 0; i < b; i++) {
+                    c = c * a;
+                }
+                System.out.println("a ^ b = " + c);
+            }
         }
         else if (operation.equals("%")){
             System.out.println("a % b = " + (a % b));
