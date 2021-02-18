@@ -5,14 +5,16 @@ import java.util.Scanner;
 
 public class CalculatorTest {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        Calculator calc = new Calculator();
-        calc.instruction();
-        calc.setNumber_1(input.nextFloat());
-        calc.setOperation(input.nextLine());
-        calc.setNumber_2(input.nextFloat());
-
         while (true) {
+            Scanner input = new Scanner(System.in);
+            Calculator calc = new Calculator();
+            calc.instruction();
+            System.out.print("Введите первое число: ");
+            calc.setNumber_1(input.nextInt());
+            System.out.print("Введите знак математической операции: ");
+            calc.setOperation(input.next());
+            System.out.print("Введите второе число: ");
+            calc.setNumber_2(input.nextInt());
             calc.calculation();
             if (calc.isExit()){
                 break;

@@ -16,21 +16,18 @@ import java.util.Scanner;
 
 public class Calculator {
     private String operation;
-    private float number_1;
-    private float number_2;
+    private int number_1;
+    private int number_2;
 
     public void setOperation(String operation){
-        System.out.print("Введите знак математической операции: ");
         this.operation = operation;
     }
 
-    public void setNumber_1(float number_1){
-        System.out.print("Введите первое число: ");
+    public void setNumber_1(int number_1){
         this.number_1 = number_1;
     }
 
-    public void setNumber_2(float number_2){
-        System.out.print("Введите второе число: ");
+    public void setNumber_2(int number_2){
         this.number_2 = number_2;
     }
 
@@ -41,40 +38,40 @@ public class Calculator {
         System.out.println("'*' -  умножение; ");
         System.out.println("'/' -  деление; ");
         System.out.println("'^' -  возведение в степень; ");
-        System.out.println("'%' -  деление по модулю; ");
+        System.out.println("'%' -  деление по модулю;");
     }
 
     public void calculation(){
         switch (operation) {
             case "+":
-                System.out.format("%f + %f = " + (number_1 + number_2), number_1, number_2);
+                System.out.printf("%d + %d = " + (number_1 + number_2) + "\n", number_1, number_2);
                 break;
             case "-":
-                System.out.format("%f - %f = " + (number_1 - number_2), number_1, number_2);
+                System.out.printf("%d - %d = " + (number_1 - number_2) + "\n", number_1, number_2);
                 break;
             case "*":
-                System.out.format("%f * %f = " + (number_1 * number_2), number_1, number_2);
+                System.out.printf("%d * %d = " + (number_1 * number_2) + "\n", number_1, number_2);
                 break;
             case "/":
                 if (number_2 == 0) {
                     System.out.println("Деление на 0 запрещено!");
                 } else {
-                    System.out.format("%f / %f = " + (number_1 / number_2), number_1, number_2);
+                    System.out.format("%d / %d = " + (number_1 / number_2) + "\n", number_1, number_2);
                 }
                 break;
             case "^":
                 if (number_2 == 0) {
-                    System.out.format("%f ^ %f = 1", number_1, number_2);
+                    System.out.format("%d ^ %d = 1\n", number_1, number_2);
                 } else {
                     float temp_number = 1;
                     for (int i = 0; i < number_2; i++) {
                         temp_number = temp_number * number_1;
                     }
-                    System.out.format("%f ^ %f = " + (temp_number), number_1, number_2);
+                    System.out.printf("%d ^ %d = " + (temp_number) + "\n", number_1, number_2);
                 }
                 break;
             case "%":
-                System.out.format("%f % %f = " + (number_1 % number_2), number_1, number_2);
+                System.out.printf(("%d % %d = " + number_1 % number_2) + "\n", number_1, number_2);
                 break;
             default:
                 System.out.println("Вы ввели не верные данные");
@@ -85,7 +82,7 @@ public class Calculator {
     public boolean isExit(){
         while (true) {
             Scanner input = new Scanner(System.in);
-            System.out.print("Хотите продолжить вычисления? [да/нет]:");
+            System.out.print("Хотите продолжить вычисления? [да/нет]: ");
             String exit = input.nextLine();
             if (exit.equals("нет")) {
                 return true;
@@ -97,5 +94,4 @@ public class Calculator {
             }
         }
     }
-
 }
