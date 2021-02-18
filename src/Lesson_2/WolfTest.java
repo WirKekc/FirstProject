@@ -7,13 +7,20 @@ package Lesson_2;
 //    считайте эти значения из полей и отобразите в консоли
 //    вызовите методы объекта
 
+//Модифицируйте класс WolfTest
+//        с помощью сеттеров присвойте полям экземпляра класса Wolf какие-то значения
+//        считайте эти значения из полей с помощью геттеров и отобразите в консоли
+
+
+
 public class WolfTest {
     public static void main(String[] args) {
         Wolf wolf = new Wolf();
-        wolf.nickname = "Jack";
-        wolf.color = "black";
-        System.out.println("nickname = " + wolf.nickname);
-        System.out.println("color = " + wolf.color);
-        System.out.println("age = " + wolf.age);
+        wolf.setNickname("Jack");
+        wolf.setColor("black");
+        wolf.setAge(10);
+        System.out.println("nickname = " + wolf.getNickname());
+        System.out.println("color = " + wolf.getColor());
+        System.out.println("age = " + wolf.getAge());
     }
 }
