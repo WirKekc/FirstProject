@@ -20,5 +20,17 @@ public class JaegerTest {
         System.out.println("strength = " + jaegerOne.getStrength());
         System.out.println("armor = " + jaegerOne.getArmor());
 
+        System.out.println("=============================");
+
+        JaegerV2 jaegerV2 = new JaegerV2("Big Robot", "Mark 8", "Russia", 89.8f, 3.8f,8, 8, 9);
+        System.out.println("modelName = " + jaegerV2.getModelName());
+        System.out.println("mark = " + jaegerV2.getMark());
+        System.out.println("origin = " + jaegerV2.getOrigin());
+        System.out.println("height = " + jaegerV2.getHeight());
+        System.out.println("weight = " + jaegerV2.getWeight());
+        System.out.println("speed = " + jaegerV2.getSpeed());
+        System.out.println("strength = " + jaegerV2.getStrength());
+        System.out.println("armor = " + jaegerV2.getArmor());
+
     }
 }
