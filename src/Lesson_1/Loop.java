@@ -10,7 +10,7 @@ public class Cycle {
             System.out.println(i);
         }
 
-        System.out.println("WHILE:");
+        System.out.println("\nWHILE:");
         int i = -6;
         while (i < 7){
             System.out.println(i);
@@ -19,9 +19,13 @@ public class Cycle {
 
         System.out.println("DO-WHILE");
         int j = 10;
+        int sum = 0;
         do {
-            System.out.println(j);
+            if(j%2==1){
+                sum += j;
+            }
             j++;
         }while (j <= 20);
+        System.out.println(sum);
     }
 }

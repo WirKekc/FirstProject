@@ -10,14 +10,14 @@ package Lesson_1;
 
 public class Variable {
     public static void main(String[] args) {
-        byte b = -5;
-        short s = 45;
-        int i = 45620078;
-        long l = 1234567890;
-        float f = 3.4393245f;
-        double d = 45.245356d;
-        char c = 'Z';
-        boolean bool = true;
-        System.out.println(b + "\n" + s + "\n" + i + "\n" + l + "\n" + f + "\n" + d + "\n" + c + "\n" + bool);
+        byte cpu = 5;
+        short RAM = 16384;
+        int testInt = 45620078;
+        long testLong = 1234567890;
+        float testFloat = 3.4393245f;
+        double testDouble = 45.245356d;
+        char testChar = 'Z';
+        boolean testBool = true;
+        System.out.println(cpu + "\n" + RAM + "\n" + testInt + "\n" + testLong + "\n" + testFloat + "\n" + testDouble + "\n" + testChar + "\n" + testBool);
     }
 }
