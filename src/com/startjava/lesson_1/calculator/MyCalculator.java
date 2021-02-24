@@ -1,4 +1,4 @@
-package Lesson_1;
+package com.startjava.lesson_1.calculator;
 //Реализуйте Калькулятор, который должен уметь выполнять математические операции (+, -, *, /, ^, %) над целыми положительными числами:
 //
 //        для выбора вычисления той или иной математической операции используйте проверку математического знака с помощью if else
@@ -8,7 +8,7 @@ package Lesson_1;
 
 import java.util.Scanner;
 
-public class My_calc_v2 {
+public class MyCalculator {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 

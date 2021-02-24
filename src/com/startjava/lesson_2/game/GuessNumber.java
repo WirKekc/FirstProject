@@ -1,4 +1,4 @@
-package Lesson_2;
+package com.startjava.lesson_2.game;
 
 //Модифицируйте программу Угадай число:
 //

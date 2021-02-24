@@ -1,4 +1,4 @@
-package Lesson_2;
+package com.startjava.lesson_2.calculator;
 //Модифицируйте программу Калькулятор:
 //
 //        реализуйте дополнительный класс CalculatorTest, перенеся в него метод main

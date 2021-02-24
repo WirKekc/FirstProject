@@ -1,5 +1,5 @@
-package Lesson_1;/*
-Создайте класс Lesson_1.ConditionalStatement с методом main
+package com.startjava.lesson_1.classwork.conditionalStatement;/*
+Создайте класс com.startjava.Lesson_1.classwork.conditionalStatement.ConditionalStatement с методом main
 Перепишите псевдокод, приведенный ниже, с помощью языка Java
 Используйте переменные и условные операторы
 Выводите сообщения на консоль
