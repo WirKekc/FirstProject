@@ -1,6 +1,5 @@
 package com.startjava.lesson_2.game;
 
-
 import java.util.Scanner;
 
 public class Player {
@@ -10,7 +9,6 @@ public class Player {
 
     private final String name;
     private int number;
-
 
     public void setNumber(int number) {
         this.number = number;

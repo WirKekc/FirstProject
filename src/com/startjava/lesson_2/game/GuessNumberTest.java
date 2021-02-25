@@ -10,19 +10,11 @@ public class GuessNumberTest {
 
         player1.generateNumber();
         player2.generateNumber();
-
-//        System.out.print("Игрок " + player1.getName() + ", введите число: " );
-//        player1.setNumber(input.nextInt());
-//
-//        System.out.print("Игрок " + player2.getName() + ", введите число: " );
-//        player2.setNumber(input.nextInt());
-
         GuessNumber guessNumber1 = new GuessNumber(player1.getNumber(), player1.getName());
         GuessNumber guessNumber2 = new GuessNumber(player2.getNumber(), player2.getName());
         boolean isExit = false;
         while (!isExit) {
             int resultPlayer1 = guessNumber1.action();
-
             int resultPlayer2 = guessNumber2.action();
 
             if (resultPlayer1 == resultPlayer2){
@@ -53,7 +45,5 @@ public class GuessNumberTest {
                 }
             }
         }
-
-
     }
 }

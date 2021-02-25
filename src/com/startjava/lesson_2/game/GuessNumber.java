@@ -22,20 +22,10 @@ public class GuessNumber {
     Scanner input = new Scanner(System.in);
     Random random = new Random();
 
-
-
-
-
     public GuessNumber(int inputNumber, String playerName){
         this.inputNumber = inputNumber;
         this.playerName = playerName;
-
     }
-
-
-//    public int getNumber() {
-//        return number;
-//    }
 
     public int action() {
         int number = random.nextInt(100);
@@ -59,6 +49,5 @@ public class GuessNumber {
                 return attemptNumber;
             }
         }
-
     }
 }
