@@ -17,10 +17,6 @@ public class Player {
         return saveNumbers;
     }
 
-//    public void setNumber(int number) {
-//        this.number = number;
-//    }
-
     public String getName() {
         return name;
     }
@@ -29,9 +25,9 @@ public class Player {
         return number;
     }
 
-    public void inputNumber(){
+    public void inputNumber() {
         Scanner input = new Scanner(System.in);
-        System.out.print("Игрок " + name + ", введите число: " );
+        System.out.print("Игрок " + name + ", введите число: ");
         number = input.nextInt();
 
     }

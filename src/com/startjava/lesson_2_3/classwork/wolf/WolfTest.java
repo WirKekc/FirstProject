@@ -1,4 +1,4 @@
-package com.startjava.lesson_2.classwork.wolf;
+package com.startjava.lesson_2_3.classwork.wolf;
 
 //Создайте класс WolfTest с методом main
 //
@@ -12,15 +12,16 @@ package com.startjava.lesson_2.classwork.wolf;
 //        считайте эти значения из полей с помощью геттеров и отобразите в консоли
 
 
-
 public class WolfTest {
     public static void main(String[] args) {
         Wolf wolf = new Wolf();
         wolf.setNickname("Jack");
         wolf.setColor("black");
         wolf.setAge(10);
+        wolf.setSex("Male");
         System.out.println("nickname = " + wolf.getNickname());
         System.out.println("color = " + wolf.getColor());
         System.out.println("age = " + wolf.getAge());
+        System.out.println("age = " + wolf.getSex());
     }
 }

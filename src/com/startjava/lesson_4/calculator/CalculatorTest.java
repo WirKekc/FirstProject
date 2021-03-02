@@ -6,7 +6,7 @@ public class CalculatorTest {
             Calculator calc = new Calculator();
             calc.inputData();
             System.out.println(calc.calculate());
-            if (calc.isExit()){
+            if (calc.isExit()) {
                 break;
             }
         }

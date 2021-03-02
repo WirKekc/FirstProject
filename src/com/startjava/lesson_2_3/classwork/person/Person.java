@@ -1,4 +1,4 @@
-package com.startjava.lesson_2.classwork.person;
+package com.startjava.lesson_2_3.classwork.person;
 
 //Создайте класс Person (без метода main)
 //        Напишите в нем поля (атрибуты), описывающие характеристики человека: пол, имя, рост, вес, возраст
@@ -12,23 +12,23 @@ public class Person {
     int weight = 70;
     int age = 30;
 
-    void go(){
+    void go() {
 
     }
 
-    void sit(){
+    void sit() {
 
     }
 
-    void run(){
+    void run() {
 
     }
 
-    void speak(){
+    void speak() {
 
     }
 
-    void learnJava(){
+    void learnJava() {
 
     }
 }

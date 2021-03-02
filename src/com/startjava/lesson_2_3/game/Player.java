@@ -1,4 +1,4 @@
-package com.startjava.lesson_2.game;
+package com.startjava.lesson_2_3.game;
 
 import java.util.Scanner;
 
@@ -22,9 +22,9 @@ public class Player {
         return number;
     }
 
-    public void generateNumber(){
+    public void generateNumber() {
         Scanner input = new Scanner(System.in);
-        System.out.print("Игрок " + name + ", введите число: " );
+        System.out.print("Игрок " + name + ", введите число: ");
         setNumber(input.nextInt());
     }
 }

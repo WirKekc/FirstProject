@@ -26,7 +26,7 @@ public class GuessNumber {
     Scanner input = new Scanner(System.in);
     Random random = new Random();
 
-    public GuessNumber(int inputNumber, String playerName, int[] savePlayerNumbers){
+    public GuessNumber(int inputNumber, String playerName, int[] savePlayerNumbers) {
         this.inputNumber = inputNumber;
         this.playerName = playerName;
         this.savePlayerNumbers = savePlayerNumbers;
@@ -43,19 +43,19 @@ public class GuessNumber {
         for (int i = 0; i < 10; i++) {
             savePlayerNumbers[i] = inputNumber;
             System.out.println(playerName + " ввел число " + inputNumber);
-            if ((inputNumber < number)&& (i < 9)) {
+            if ((inputNumber < number) && (i < 9)) {
                 System.out.println("Введенное игроком " + playerName + " число меньше того, что загадал компьютер");
-                    System.out.print("Игрок " + playerName + ", введите еще раз число: ");
-                    inputNumber = input.nextInt();
-            } else if ((inputNumber > number) && (i < 9)){
+                System.out.print("Игрок " + playerName + ", введите еще раз число: ");
+                inputNumber = input.nextInt();
+            } else if ((inputNumber > number) && (i < 9)) {
                 System.out.println("Введенное игроком " + playerName + " число больше того, что загадал компьютер");
-                    System.out.print("Игрок " + playerName + ", введите еще раз число: ");
-                    inputNumber = input.nextInt();
+                System.out.print("Игрок " + playerName + ", введите еще раз число: ");
+                inputNumber = input.nextInt();
 
-            } else if (inputNumber == number){
+            } else if (inputNumber == number) {
                 System.out.println("Игрок " + playerName + " угадал число " + number + " с " + (i + 1) + "'ой попытки!");
                 System.out.println("==========================================================");
-                attempt = i +1;
+                attempt = i + 1;
                 return Arrays.copyOf(savePlayerNumbers, attempt);
             }
         }

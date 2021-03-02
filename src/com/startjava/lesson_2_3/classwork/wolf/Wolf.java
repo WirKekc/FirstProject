@@ -1,4 +1,4 @@
-package com.startjava.lesson_2.classwork.wolf;
+package com.startjava.lesson_2_3.classwork.wolf;
 
 // Создайте класс Wolf
 //
@@ -19,59 +19,59 @@ public class Wolf {
     private int age = 5;
     private String color = "gray";
 
-    public String getSex(){
+    public String getSex() {
         return sex;
     }
 
-    public void setSex(String sex){
+    public void setSex(String sex) {
         this.sex = sex;
     }
 
-    public String getNickname(){
+    public String getNickname() {
         return nickname;
     }
 
-    public void setNickname(String nickname){
+    public void setNickname(String nickname) {
         this.nickname = nickname;
     }
 
-    public int getAge(){
+    public int getAge() {
         return age;
     }
 
-    public void setAge(int age){
-        if (age > 8){
+    public void setAge(int age) {
+        if (age > 8) {
             System.out.println("Некорректный возраст");
-        }
-        else {
+        } else {
             this.age = age;
         }
     }
 
-    public String getColor(){
+    public String getColor() {
         return color;
     }
 
-    public void setColor(String color){
+    public void setColor(String color) {
         this.color = color;
     }
 
-    public void  go(){
+    public void go() {
 
     }
 
-    public void sit(){
+    public void sit() {
 
     }
 
-    public void run(){
+    public void run() {
 
     }
 
-    public void howl(){
+    public void howl() {
 
     }
-    public void hunt(){
 
-     }
+    public void hunt() {
+
+    }
 }

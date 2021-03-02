@@ -1,4 +1,4 @@
-package com.startjava.lesson_2.game;
+package com.startjava.lesson_2_3.game;
 
 //Модифицируйте программу Угадай число:
 //
@@ -22,7 +22,7 @@ public class GuessNumber {
     Scanner input = new Scanner(System.in);
     Random random = new Random();
 
-    public GuessNumber(int inputNumber, String playerName){
+    public GuessNumber(int inputNumber, String playerName) {
         this.inputNumber = inputNumber;
         this.playerName = playerName;
     }

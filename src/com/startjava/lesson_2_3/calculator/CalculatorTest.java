@@ -1,4 +1,4 @@
-package com.startjava.lesson_2.calculator;
+package com.startjava.lesson_2_3.calculator;
 
 import java.util.Scanner;
 
@@ -15,7 +15,7 @@ public class CalculatorTest {
             System.out.print("Введите второе число: ");
             calc.setNumber_2(input.nextInt());
             calc.calculation();
-            if (calc.isExit()){
+            if (calc.isExit()) {
                 break;
             }
         }

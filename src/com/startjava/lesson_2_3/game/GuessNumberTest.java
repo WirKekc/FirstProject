@@ -1,4 +1,4 @@
-package com.startjava.lesson_2.game;
+package com.startjava.lesson_2_3.game;
 
 import java.util.Scanner;
 
@@ -17,13 +17,11 @@ public class GuessNumberTest {
             int resultPlayer1 = guessNumber1.action();
             int resultPlayer2 = guessNumber2.action();
 
-            if (resultPlayer1 == resultPlayer2){
+            if (resultPlayer1 == resultPlayer2) {
                 System.out.println("Ничья");
-            }
-            else if (resultPlayer1 < resultPlayer2) {
+            } else if (resultPlayer1 < resultPlayer2) {
                 System.out.println("Победил игрок " + player1.getName());
-            }
-            else {
+            } else {
                 System.out.println("Победил игрок " + player2.getName());
             }
             while (!isExit) {
@@ -37,8 +35,7 @@ public class GuessNumberTest {
                     guessNumber1 = new GuessNumber(player1.getNumber(), player1.getName());
                     guessNumber2 = new GuessNumber(player2.getNumber(), player2.getName());
                     break;
-                }
-                else {
+                } else {
                     System.out.println("Вы ввели неверные данные. Попробуйте еще раз.");
                     // В Calculator и CalculatorTest, как мне кажется, я лучше реализовал задание с выходим из программы,
                     // но этот способ больше соответсвует требованиям.

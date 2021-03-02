@@ -1,4 +1,4 @@
-package com.startjava.lesson_2.robot;
+package com.startjava.lesson_2_3.robot;
 
 //Модифицируйте класс Jaeger, сделав его универсальным (без инициализации полей в самом классе, как мы это делали в уроке).
 // Это позволит на его основе создавать любого робота:
@@ -83,16 +83,16 @@ public class Jaeger {
         this.armor = armor;
     }
 
-    public String getModelName(){
+    public String getModelName() {
         return modelName;
     }
 
-    public boolean drift(){
+    public boolean drift() {
         System.out.println("Вы вошли в дрифт");
         return true;
     }
 
-    public void move(){
+    public void move() {
         System.out.println("Вы прошли 5 шагов");
     }
 

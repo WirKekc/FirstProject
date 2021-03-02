@@ -13,7 +13,7 @@ public class Calculator {
     private int number_1;
     private int number_2;
 
-    public void inputData(){
+    public void inputData() {
         System.out.print("Введите математическое выражение: ");
         Scanner input = new Scanner(System.in);
         String[] data = input.nextLine().split(" ");
@@ -23,7 +23,7 @@ public class Calculator {
         operation = data[1];
     }
 
-    public int calculate(){
+    public int calculate() {
         switch (operation) {
             case "+":
                 return (number_1 + number_2);
@@ -39,7 +39,7 @@ public class Calculator {
                     return (number_1 / number_2);
                 }
             case "^":
-                return (int)(Math.pow(number_1, number_2));
+                return (int) (Math.pow(number_1, number_2));
             case "%":
                 return (number_1 % number_2);
             default:
@@ -48,7 +48,7 @@ public class Calculator {
         }
     }
 
-    public boolean isExit(){
+    public boolean isExit() {
         while (true) {
             Scanner input = new Scanner(System.in);
             System.out.print("Хотите продолжить вычисления? [y/n]: ");
@@ -57,8 +57,7 @@ public class Calculator {
                 return true;
             } else if ("y".equals(exit)) {
                 return false;
-            }
-            else {
+            } else {
                 System.out.println("Введен неверный ответ! Попробуйте еще раз");
             }
         }

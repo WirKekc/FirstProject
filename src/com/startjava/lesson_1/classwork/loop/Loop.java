@@ -6,13 +6,13 @@ package com.startjava.lesson_1.classwork.loop;// Создайте класс com
 public class Loop {
     public static void main(String[] args) {
         System.out.println("FOR:");
-        for (int i = 0; i <= 20 ; i++) {
+        for (int i = 0; i <= 20; i++) {
             System.out.println(i);
         }
 
         System.out.println("\nWHILE:");
         int i = -6;
-        while (i < 7){
+        while (i < 7) {
             System.out.println(i);
             i = i + 2;
         }
@@ -21,11 +21,11 @@ public class Loop {
         int j = 10;
         int sum = 0;
         do {
-            if(j%2==1){
+            if (j % 2 == 1) {
                 sum += j;
             }
             j++;
-        }while (j <= 20);
+        } while (j <= 20);
         System.out.println(sum);
     }
 }

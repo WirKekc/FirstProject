@@ -1,4 +1,4 @@
-package com.startjava.lesson_2.calculator;
+package com.startjava.lesson_2_3.calculator;
 //Модифицируйте программу Калькулятор:
 //
 //        реализуйте дополнительный класс CalculatorTest, перенеся в него метод main
@@ -19,19 +19,19 @@ public class Calculator {
     private int number_1;
     private int number_2;
 
-    public void setOperation(String operation){
+    public void setOperation(String operation) {
         this.operation = operation;
     }
 
-    public void setNumber_1(int number_1){
+    public void setNumber_1(int number_1) {
         this.number_1 = number_1;
     }
 
-    public void setNumber_2(int number_2){
+    public void setNumber_2(int number_2) {
         this.number_2 = number_2;
     }
 
-    public void instruction(){
+    public void instruction() {
         System.out.println("Список операций:");
         System.out.println("'+' -  сложение; ");
         System.out.println("'-' -  вычетание; ");
@@ -41,7 +41,7 @@ public class Calculator {
         System.out.println("'%' -  деление по модулю;");
     }
 
-    public void calculation(){
+    public void calculation() {
         switch (operation) {
             case "+":
                 System.out.printf("%d + %d = " + (number_1 + number_2) + "\n", number_1, number_2);
@@ -79,7 +79,7 @@ public class Calculator {
         }
     }
 
-    public boolean isExit(){
+    public boolean isExit() {
         while (true) {
             Scanner input = new Scanner(System.in);
             System.out.print("Хотите продолжить вычисления? [да/нет]: ");
@@ -88,8 +88,7 @@ public class Calculator {
                 return true;
             } else if (exit.equals("да")) {
                 return false;
-            }
-            else {
+            } else {
                 System.out.println("Введен неверный ответ! Попробуйте еще раз");
             }
         }

@@ -29,37 +29,29 @@ public class MyCalculator {
 
         if (operation.equals("+")) {
             System.out.println("a + b = " + (a + b));
-        }
-        else if (operation.equals("-")){
+        } else if (operation.equals("-")) {
             System.out.println("a - b = " + (a - b));
-        }
-        else if (operation.equals("*")){
+        } else if (operation.equals("*")) {
             System.out.println("a * b = " + (a * b));
-        }
-        else if (operation.equals("/")){
-            if (b == 0){
+        } else if (operation.equals("/")) {
+            if (b == 0) {
                 System.out.println("Деление на 0 запрещено!");
-            }
-            else {
+            } else {
                 System.out.println("a / b = " + (a / b));
             }
-        }
-        else if (operation.equals("^")){
-            if (b == 0){
+        } else if (operation.equals("^")) {
+            if (b == 0) {
                 System.out.println("a ^ b = 1");
-            }
-            else {
+            } else {
                 float temp_number = 1;
                 for (int i = 0; i < b; i++) {
                     temp_number = temp_number * a;
                 }
                 System.out.printf("%f ^ %f = " + (temp_number), a, b);
             }
-        }
-        else if (operation.equals("%")){
+        } else if (operation.equals("%")) {
             System.out.println("a % b = " + (a % b));
-        }
-        else{
+        } else {
             System.out.println("Вы ввели не верные данные");
         }
     }

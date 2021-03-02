@@ -19,24 +19,22 @@ public class GuessNumberTest {
             int[] resultPlayer1 = guessNumber1.action();
             int[] resultPlayer2 = guessNumber2.action();
 
-            for (int result :resultPlayer1
-                 ) {
+            for (int result : resultPlayer1
+            ) {
                 System.out.print(result + " ");
             }
 
             System.out.println();
-            for (int result :resultPlayer2
+            for (int result : resultPlayer2
             ) {
                 System.out.print(result + " ");
             }
             System.out.println();
-            if (resultPlayer1.length == resultPlayer2.length){
+            if (resultPlayer1.length == resultPlayer2.length) {
                 System.out.println("Ничья");
-            }
-            else if (resultPlayer1.length < resultPlayer2.length) {
+            } else if (resultPlayer1.length < resultPlayer2.length) {
                 System.out.println("Победил игрок " + player1.getName());
-            }
-            else {
+            } else {
                 System.out.println("Победил игрок " + player2.getName());
             }
             while (!isExit) {
@@ -50,8 +48,7 @@ public class GuessNumberTest {
                     guessNumber1 = new GuessNumber(player1.getNumber(), player1.getName(), player1.getSaveNumbers());
                     guessNumber2 = new GuessNumber(player2.getNumber(), player2.getName(), player2.getSaveNumbers());
                     break;
-                }
-                else {
+                } else {
                     System.out.println("Вы ввели неверные данные. Попробуйте еще раз.");
                 }
             }
