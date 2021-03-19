@@ -16,18 +16,20 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class GuessNumber {
-    private final String playerName;
-    private int inputNumber;
 
     Scanner input = new Scanner(System.in);
     Random random = new Random();
 
-    public GuessNumber(int inputNumber, String playerName) {
-        this.inputNumber = inputNumber;
-        this.playerName = playerName;
+    Player player1 = new Player(enterPlayerName());
+    Player player2 = new Player(enterPlayerName());
+
+
+    private String enterPlayerName(){
+        System.out.print("Введите имя игрока: ");
+        return input.nextLine();
     }
 
-    public int action() {
+    private int act(String playerName, int inputNumber) {
         int number = random.nextInt(100);
         System.out.println("Играет " + playerName + "!");
         int attemptNumber = 0;
@@ -47,6 +49,36 @@ public class GuessNumber {
                 System.out.println(playerName + " угадал! Число попыток: " + attemptNumber);
                 System.out.println("==========================================================");
                 return attemptNumber;
+            }
+        }
+    }
+
+    public void action(){
+        player1.generateNumber();
+        player2.generateNumber();
+        boolean isExit = false;
+        while (!isExit) {
+            int resultPlayer1 = act(player1.getName(), player1.getNumber());
+            int resultPlayer2 = act(player2.getName(), player2.getNumber());
+            if (resultPlayer1 == resultPlayer2) {
+                System.out.println("Ничья");
+            } else if (resultPlayer1 < resultPlayer2) {
+                System.out.println("Победил игрок " + player1.getName());
+            } else {
+                System.out.println("Победил игрок " + player2.getName());
+            }
+            while (!isExit) {
+                System.out.println("Хотите продолжить игру? [y/n]:");
+                String answer = input.next();
+                if ("n".equals(answer)) {
+                    isExit = true;
+                } else if ("y".equals(answer)) {
+                    player1.generateNumber();
+                    player2.generateNumber();
+                    break;
+                } else {
+                    System.out.println("Вы ввели неверные данные. Попробуйте еще раз.");
+                }
             }
         }
     }

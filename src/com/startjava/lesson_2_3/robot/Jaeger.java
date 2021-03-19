@@ -13,7 +13,6 @@ package com.startjava.lesson_2_3.robot;
 
 public class Jaeger {
 
-
     private String modelName = "Bracer Phoenix";
     private String mark = "Mark 5";
     private String origin = "USA";
@@ -22,6 +21,20 @@ public class Jaeger {
     private int speed = 3;
     private int strength = 8;
     private int armor = 9;
+
+    public boolean drift() {
+        System.out.println("Вы вошли в дрифт");
+        return true;
+    }
+
+    public void move() {
+        System.out.println("Вы прошли 5 шагов");
+    }
+
+    public String scanKaiju() {
+        return "nothing";
+    }
+
 
     public String getMark() {
         return mark;
@@ -86,18 +99,4 @@ public class Jaeger {
     public String getModelName() {
         return modelName;
     }
-
-    public boolean drift() {
-        System.out.println("Вы вошли в дрифт");
-        return true;
-    }
-
-    public void move() {
-        System.out.println("Вы прошли 5 шагов");
-    }
-
-    public String scanKaiju() {
-        return "nothing";
-    }
-
 }

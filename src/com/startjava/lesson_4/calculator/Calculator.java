@@ -47,19 +47,4 @@ public class Calculator {
                 return -1;
         }
     }
-
-    public boolean isExit() {
-        while (true) {
-            Scanner input = new Scanner(System.in);
-            System.out.print("Хотите продолжить вычисления? [y/n]: ");
-            String exit = input.nextLine();
-            if ("n".equals(exit)) {
-                return true;
-            } else if ("y".equals(exit)) {
-                return false;
-            } else {
-                System.out.println("Введен неверный ответ! Попробуйте еще раз");
-            }
-        }
-    }
 }

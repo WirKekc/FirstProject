@@ -1,20 +1,24 @@
 package com.startjava.lesson_4.game;
 
-
 import java.util.Scanner;
 
 public class Player {
-    public Player(String name) {
-        this.name = name;
-
-    }
-
     private final String name;
     private int number;
     private int[] saveNumbers = new int[10];
 
-    public int[] getSaveNumbers() {
-        return saveNumbers;
+    public Player(String name) {
+        this.name = name;
+    }
+
+    public void generateNumber() {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Игрок " + name + ", введите число: ");
+        setNumber(input.nextInt());
+    }
+
+    public void setNumber(int number) {
+        this.number = number;
     }
 
     public String getName() {
@@ -25,10 +29,11 @@ public class Player {
         return number;
     }
 
-    public void inputNumber() {
-        Scanner input = new Scanner(System.in);
-        System.out.print("Игрок " + name + ", введите число: ");
-        number = input.nextInt();
+    public int[] getSaveNumbers() {
+        return saveNumbers;
+    }
 
+    public void setSaveNumbers(int[] saveNumbers) {
+        this.saveNumbers = saveNumbers;
     }
 }

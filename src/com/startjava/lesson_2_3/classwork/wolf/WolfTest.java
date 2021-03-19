@@ -23,5 +23,11 @@ public class WolfTest {
         System.out.println("color = " + wolf.getColor());
         System.out.println("age = " + wolf.getAge());
         System.out.println("age = " + wolf.getSex());
+
+        wolf.go();
+        wolf.sit();
+        wolf.run();
+        wolf.howl();
+        wolf.hunt();
     }
 }

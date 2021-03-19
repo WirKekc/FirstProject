@@ -56,22 +56,22 @@ public class Wolf {
     }
 
     public void go() {
-
+        System.out.println("Гордо шествует по своим просторам!");
     }
 
     public void sit() {
-
+        System.out.println("Сидит и наблюдает за стаей");
     }
 
     public void run() {
-
+        System.out.println("Бежит впереди, протаптывая путь стае своими мощными лапищами");
     }
 
     public void howl() {
-
+        System.out.println("Воет так, что поджилки трясутся");
     }
 
     public void hunt() {
-
+        System.out.println("Охотится. Не хотел бы я быть на месте добычи");
     }
 }

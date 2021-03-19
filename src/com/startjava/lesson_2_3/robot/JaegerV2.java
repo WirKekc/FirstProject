@@ -1,7 +1,18 @@
 package com.startjava.lesson_2_3.robot;
 
 public class JaegerV2 {
-    public JaegerV2(String modelName, String mark, String origin, float height, float weight, int speed, int strength, int armor) {
+
+    private final String modelName;
+    private final String mark;
+    private final String origin;
+    private final float height;
+    private final float weight;
+    private final int speed;
+    private final int strength;
+    private final int armor;
+
+    public JaegerV2(String modelName, String mark, String origin,
+                    float height, float weight, int speed, int strength, int armor) {
         assert modelName != null;
         this.modelName = modelName;
         assert mark != null;
@@ -19,15 +30,6 @@ public class JaegerV2 {
         assert armor != 0;
         this.armor = armor;
     }
-
-    private final String modelName;
-    private final String mark;
-    private final String origin;
-    private final float height;
-    private final float weight;
-    private final int speed;
-    private final int strength;
-    private final int armor;
 
     public void move() {
         System.out.println("Вы прошли 5 шагов");

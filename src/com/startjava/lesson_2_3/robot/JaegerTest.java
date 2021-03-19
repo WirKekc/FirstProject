@@ -22,7 +22,8 @@ public class JaegerTest {
 
         System.out.println("=============================");
 
-        JaegerV2 jaegerV2 = new JaegerV2("Big Robot", "Mark 8", "Russia", 89.8f, 3.8f, 8, 8, 9);
+        JaegerV2 jaegerV2 = new JaegerV2("Big Robot", "Mark 8", "Russia", 89.8f,
+                3.8f, 8, 8, 9);
         System.out.println("modelName = " + jaegerV2.getModelName());
         System.out.println("mark = " + jaegerV2.getMark());
         System.out.println("origin = " + jaegerV2.getOrigin());
